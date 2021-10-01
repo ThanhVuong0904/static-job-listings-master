@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  overflow-x: hidden;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 374px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-primary {
+  color: #5ba4a4;
+  font-weight: 600;
+}
+
+.label {
+  margin-left: 15px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+}
+
+.label-featured {
+  background-color: #2c3a3a;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.label-new {
+  background-color: #5ba4a4;
+  padding: 8px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.button--primary {
+  background-color: #effafa;
+  color: #5ba4a4;
+  font-weight: bold;
+}
+
+.button--primary:hover {
+  background-color: #5ba4a4;
+  color: white !important;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header {
+  background-image: url(/images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 156px;
+  background-color: #5ba4a4;
+  position: relative;
+}
+
+.post {
+  padding: 80px 0;
+  background-color: #effafa;
+}
+
+.post-title {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-heading {
+  font-size: 19px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.post-heading:hover {
+  color: #5ba4a4;
+}
+
+.post-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 25px 0;
+}
+
+.post-item {
+  padding: 35px 40px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.post .label-DesaturatedDarkCyan {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #5ba4a4;
+  left: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.post-content {
+  margin-left: 25px;
+}
+
+.post-tag {
+  margin-left: auto;
+}
+
+.post-tag-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.post-public {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #7b8e8e;
+}
+
+.post-public span {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 1279px) {
+  .post-tag-item:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .post-list {
+    grid-gap: 50px 0;
+  }
+  .post-content {
+    margin-left: 0;
+  }
+  .post-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .post-tag {
+    margin-top: 20px;
+    margin-left: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    grid-gap: 20px 0;
+  }
+  .post-image {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+  }
+  .post-heading {
+    font-size: 17px;
+  }
+  .post-public span {
+    margin: 0 7px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .post-item {
+    padding: 35px 25px;
+  }
+  .post-content {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .post-title {
+    font-size: 13px;
+  }
+  .post-heading {
+    font-size: 15px;
+  }
+  .post .label {
+    font-size: 11px;
+    padding: 7px;
+  }
+  .post-public span {
+    margin: 0 5px;
+  }
+  .post-tag-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.wrap-filter {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.filter {
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.filter-list {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.filter-item-text {
+  background-color: #effafa;
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+  color: #5ba4a4;
+  font-weight: 600;
+}
+
+.filter-clear {
+  margin-left: auto;
+  color: #5ba4a4;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.filter-clear:hover {
+  border-bottom: 1px solid #5ba4a4;
+}
+
+.filter .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1023px) {
+  .filter {
+    padding: 20px;
+  }
+  .filter-list {
+    grid-row-gap: 20px;
+  }
+}
+
+.delete {
+  color: white;
+  background-color: #5ba4a4;
+  padding: 8px;
+  border-radius: 0 5px 5px 0px;
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.delete:hover {
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
